@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgba(250,251,252,255);
+    }
+    #navbar{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    #navbar>img{
+        width:8%;
+        cursor:pointer;
+    }
+    #main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 650px;
+        gap:90px;
+    }
+    #main>div{
+        /* border:1px solid red; */
+        margin-top:150px
+    }
+    .zoom-in {
+    cursor: zoom-in;
+    }
+    .zoom-in:hover{
+        width:150px;
+        height: 150px;
+    }
+    p{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      font-size:12px;
+    }
+    #select{
+        width:380px;
+        padding:10px 0px 10px 0px;
+        margin-bottom:20px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(93, 87, 87);
+        background-color: rgba(250,251,252,255);
+        cursor:pointer;
+    }
+    #right>button{
+        padding:10px 70px 10px 70px;
+        background-color: black;
+        color:white;
+        cursor:pointer
+    }
+    #right>button:hover{
+        background-color: white;
+        color:black;
+        font-size: 13px;
+        /* border: none; */
+    }
+    #right>button+button{
+        padding:0px;
+        color:black;
+        background-color: white;
+        border:none;
+        margin-left:20px
+    }
+    #left{
+        margin-left:50px;
+    }
+    .underline{
+        cursor:pointer;
+        
+    }
+    .underline:hover{
+        text-decoration:underline;
+    }
+</style>
+<body>
+    <div id="navbar">
+        <p class="underline">MENSWEAR</p>
+        <p class="underline">WOMENSWEAR</p>
+        <p class="underline">EVERYTHING ELSE</p>
+        <p class="underline">SEARCH</p>
+        <img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt="" id="img1">
+        <p class="underline">ENGLISH</p>
+        <p class="underline">LOGIN</p>
+        <p class="underline">WISHLIST</p>
+        <p class="underline">SHOPPING BAG(0)</p>
+    </div>
+    <div id="main">
+        <div id="left">
+            <p class="underline">VINCE</h4>
+            <p>Black Insulated Bomber Jacket</p>
+            <p>Insulated polyester satin bomber jacket.</p>
+            <p>· Rib knit stand collar, cuffs, and hem</p>
+            <p>· Zip closure</p>
+            <p>· Welt pockets</p>
+            <p>· Welt pocket at interior</p>
+            <p>· Full twill lining</p>
+            <p>Supplier color: Black</p>
+            <p>Body: 100% polyester. Fill: 100% polyester. Lining 1: 71% cotton, 29% polyester. Lining 2: 55% polyester, 45% viscose.Imported.</p>
+            <p>222875M175000</p>     
+        </div>
+        <div id="mid"><p class="zoom-in">zoom-in</p></div>
+        <div id="right">
+            <select name="" id="select" placeholder="">
+                <option value="">SELECT A SIZE</option>
+                <option>XS -Sold Out</option>
+                <option>S - Only 1 remaining</option>
+                <option>M - Only 1 remaining</option>
+                <option value="">X - Only 2 remaining</option>
+                <option value="">XL - Only 1 remaining</option>
+            </select>
+            <button>ADD TO BAG</button>
+            <button>ADD TO WISHLIST</button>
+            <p>Item Runs </p>
+            <p>True to size</p>
+            <p>Model is 6ft 2" and wears size L.</p>
+            <p>SIZE GUIDE</p>
+            <p>India : Free shipping on orders over $500 USD</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <script>
+    let img1=document.getElementById("img1")
+    console.log(window.location.href)
+    window.location.href="mens.html"
+</script> -->
