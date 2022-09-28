@@ -1,0 +1,43 @@
+#main{
+
+    margin-top: 100px
+    ;
+    display:flex;
+    border:1px solid red;
+    width:90%;
+    margin: auto;
+
+}
+
+#left-menu{
+    width:181.47px;
+}
+
+#Mens{
+  width: 745px;
+  display:grid;
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(4,auto);
+
+
+}
+
+#Mens img{
+width: 166.77px;
+height: 249px;
+}
+
+#Mens div{
+width:189.47px;
+height:auto;
+margin: auto
+}
+
+#right-menu{
+    width: 181.47px;
+
+}
+
+
+
+
