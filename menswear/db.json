@@ -1,0 +1,527 @@
+{
+    "ssense":[
+        {
+            "id":"1",
+            "title":"VINCE",
+            "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M175000_1/vince-black-insulated-bomber-jacket.jpg",
+            "price":725,
+            "details":"Black Insulated"
+
+
+    },
+    
+    {
+        "id":"2",
+        "title":"VINCE",
+        "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M192024_1/vince-beige-oakdale-shirt.jpg",
+        "price":"275",
+        "details":"Beige Okdala Shirrt"
+
+
+},
+{
+    "id":"3",
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M180000_1/vince-navy-field-jacket.jpg",
+    "price":"725",
+    "details":"Navy Field Jacket"
+
+
+},
+{
+    "id":"4",
+    "title":"VINCE",
+
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M202004_1/vince-black-popover-hoodie.jpg",
+    "price":725,
+    "details":"Black Popover Hoodie"
+
+
+},
+{
+    "id":"5",
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M201002_1/vince-black-cashmere-sweater.jpg",
+    "price":410,
+    "details":"Black Cashmare Sweater"
+
+
+},
+{
+    "id":6,
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M213005_1/vince-black-thermal-long-sleeve-t-shirt.jpg",
+    "price":165,
+    "details":"Black Thermal T-shirt"
+
+
+},
+{
+    "id":7,
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M192012_1/vince-blue-floral-print-shirt.jpg",
+    "price":275,
+    "details":"Blue Floral Print Shirt"
+
+
+},
+{
+    "id":8,
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M192011_1/vince-white-recycled-cotton-shirt.jpg",
+    "price":365,
+    "details":"White Recycled Cotton Shirts "
+
+
+},
+{
+    "id":9,
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M192015_1/vince-navy-border-shirt.jpg",
+    "price":275,
+    "details":"Navy Border Shirts"
+
+
+},
+{
+    "id":"",
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M211001_1/vince-navy-pima-cotton-henley.jpg",
+    "price":136,
+    "details":"Navy Cotton Henley"
+
+
+},
+{
+    "id":"",
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M190005_1/vince-black-polyester-lounge-pants.jpg",
+    "price":330,
+    "details":"Black Polyster Pnats"
+
+
+},
+{
+    "id":"",
+    "title":"VINCE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222875M191009_1/vince-black-pull-on-trousers.jpg",
+    "price":325,
+    "details":"Black Trouser"
+
+
+},
+{
+    "id":"",
+    "title":"AMIRI",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222886M190004_1/amiri-black-bandana-bleach-sweatpants.jpg",
+    "price":1190,
+    "details":"Black Bleach Sweatpants"
+
+
+},
+{
+    "id":"",
+    "title":"AMIRI",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222886M208012_1/amiri-orange-ma-bar-swim-shorts.jpg",
+    "price":390,
+    "details":"Orange Ma Bar Swim Shorts "
+
+
+},{
+    "id":"",
+    "title":"JACQUEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M180015_1/jacquemus-navy-le-papier-la-veste-de-nimes-denim-jacket.jpg",
+    "price":945,
+    "details":"Navy Blue Denim Jacket"
+
+
+},{
+    "id":"",
+    "title":"JACQUEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M192000_1/jacquemus-purple-le-papier-la-chemise-neve-fleurs-cardigan.jpg",
+    "price":195,
+    "details":"Purple Le Papier"
+
+
+},
+{
+    "id":"",
+    "title":"JACQUEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M192001_1/jacquemus-beige-le-papier-la-chemise-neve-fleurs-cardigan.jpg",
+    "price":815,
+    "details":"Beige Le Papier Cardigon "
+
+
+
+},
+
+{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M192057_1/jacquemus-blue-le-papier-la-chemise-jean-shirt.jpg",
+    "price":500,
+    "details":"Blue Le Papier Shirt"
+
+
+
+},
+{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M192071_1/jacquemus-beige-le-papier-la-chemise-jean-shirt.jpg",
+    "price":465,
+    "details":"Beige Le Papier Cardigon  Shirt"
+
+
+
+},
+{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M213004_1/jacquemus-pink-le-papier-le-t-shirt-crema-long-sleeve-t-shirt.jpg",
+    "price":245,
+    "details":"Pink Le Papier LE T-shirt"
+
+
+
+},
+{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222232M179026_1/rick-owens-black-kunst-shearling-jacket.jpg",
+    "price":5214,
+    "details":"Balck Edge Coat"
+
+
+
+},{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M191002_1/jacquemus-beige-le-papier-le-pantalon-cozi-trousers.jpg",
+    "price":870,
+    "details":"Pantalon "
+
+
+
+},
+{
+    "id":"",
+    "title":"JACKQEMUS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222553M191003_1/jacquemus-black-le-papier-le-pantalon-cozi-trousers.jpg",
+    "price":630,
+    "details":"Black Trouser"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MOSCHINO",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222720M191002_1/moschino-black-four-pocket-cargo-pants.jpg",
+    "price":1090,
+    "details":"Balck Four Pocket Cargo Pants"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MOSCHINO",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222381M200006_1/thom-browne-black-4-bar-cardigan.jpg",
+    "price":795,
+    "details":"Blcak 4-Bar Cardigan"
+
+
+
+},
+
+{
+    "id":"",
+    "title":"MOSCHINO",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222381M200040_1/thom-browne-navy-lobster-cardigan.jpg",
+    "price":15675,
+    "details":"Navy Lobster Cardigan"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MOSCHINO",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222342M176001_1/balenciaga-black-raw-edge-coat.jpg",
+    "price":3315,
+    "details":"Balck Edge Coat"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MOSCHINO",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222669M213030_1/vetements-gray-solidarity-t-shirt.jpg",
+    "price":490,
+    "details":"Gray T-Shirt"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MARNI",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222720M191002_1/moschino-black-four-pocket-cargo-pants.jpg",
+    "price":1090,
+    "details":"Black Four Pocket Cargo Pants"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"MARGIELA",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222188M204005_1/mm6-maison-margiela-brown-paneled-sweatshirt.jpg",
+    "price":390,
+    "details":"Brown paneled sweatshirt"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222379M192025_1/marni-black-tartan-shirt.jpg",
+    "price":730,
+    "details":"Black tartan shirt"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"THE ROW",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222359M192012_1/the-row-black-beto-shirt.jpg",
+    "price":1090,
+    "details":"Black beto shirt"
+
+
+
+},
+
+
+
+{
+    "id":"",
+    "title":"RICK OWENS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222232M192037_1/rick-owens-black-outershirt-calf-hair-shirt.jpg",
+    "price":1240,
+    "details":"Black own shirt"
+
+
+
+},
+
+
+
+{
+    "id":"",
+    "title":"RAG & BONE",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222055M186041_1/rag-and-bone-black-fit-2-jeans.jpg",
+    "price":255,
+    "details":"Black Fit 2 jeans"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M192007_1/jil-sander-black-zip-shirt.jpg",
+    "price":805,
+    "details":"Black zib shirt"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201007_1/jil-sander-gray-roll-neck-sweater.jpg",
+    "price":715,
+    "details":"Gray Roll Neck Sweater"
+
+
+
+},
+
+
+
+{
+    "id":"",
+    "title":"",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201046_1/jil-sander-gray-high-neck-sweater.jpg",
+    "price":715,
+    "details":"Gray high neck sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201008_1/jil-sander-off-white-roll-neck-sweater.jpg",
+    "price":690,
+    "details":"off-white crewneck sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201008_1/jil-sander-off-white-roll-neck-sweater.jpg",
+    "price":715,
+    "details":"Off-White Roll Neck Sweater "
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201018_1/jil-sander-off-white-crewneck-sweater.jpg",
+    "price":690,
+    "details":"Off-White crewneck sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201019_1/jil-sander-navy-crewneck-sweater.jpg",
+    "price":690,
+    "details":"Navy crewneck Sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"THE ROW",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222359M192003_1/the-row-burgundy-lukre-shirt.jpg",
+    "price":990,
+    "details":"Burgundy lukre shirt"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222381M205002_1/thom-browne-gray-patch-turtleneck.jpg",
+    "price":245,
+    "details":"Gray patch Turtleneck"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M186002_1/jil-sander-blue-twisted-jeans.jpg",
+    "price":580,
+    "details":"Blue twisted jeans"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M191097_1/jil-sander-burgundy-drawstring-trousers.jpg",
+    "price":690,
+    "details":"Off _White Sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"JIL SNANDER",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222249M201019_1/jil-sander-navy-crewneck-sweater.jpg",
+    "price":690,
+    "details":"Navy crewneck Sweater"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"RICK OWENS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222232M178028_1/rick-owens-gray-duvet-jumbo-peter-down-jacket.jpg",
+    "price":2360,
+    "details":"Grey Duvet Ju mbo Peter DOwn Jacket"
+
+
+
+},
+
+
+{
+    "id":"",
+    "title":"RICK OWENS",
+    "img":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.6/222232M200000_1/rick-owens-black-sascha-cardigan.jpg",
+    "price":1240,
+    "details":"Black sascha cardigan"
+
+
+
+}
+
+
+
+],
+"login":[{
+    "emailOrNumber":"hemant",
+    "password":"1234"
+}]
+}
