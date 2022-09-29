@@ -1,0 +1,93 @@
+#main{
+
+    margin-top: 100px
+    ;
+    display:flex;
+   
+    width:93%;
+    margin: auto;
+
+}
+
+#left-menu{
+    width:181.47px;
+    text-align:left;
+
+
+}
+
+#womans{
+  width: 745px;
+  display:grid;
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(4,auto);
+
+
+}
+
+#womans img{
+width: 166.77px;
+height: 249px;
+}
+
+#womans div{
+width:189.47px;
+height:auto;
+margin: auto
+}
+
+#right-menu{
+    width: 181.47px;
+
+}
+h3{
+    cursor: pointer;
+    
+    font-family: "Favorit SSENSE Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:11px;
+    line-height:1.36;
+    letter-spacing:0.09px;
+    margin-right: 0;
+
+}
+h3:hover{
+    text-decoration:underline;
+
+}
+li{
+
+    list-style-type: none;
+    cursor: pointer;
+    
+    font-family: "Favorit SSENSE Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:11px;
+    line-height:15px;
+    letter-spacing:0.09px;
+    font-weight:400;
+     text-decoration: none;
+     padding: 0;
+ 
+  
+}
+li:hover{
+    text-decoration:underline;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#box p{
+
+    font-family: "Favorit SSENSE Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: .09px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000;
+}
+ul{
+    margin-left: -41px
+}
+
