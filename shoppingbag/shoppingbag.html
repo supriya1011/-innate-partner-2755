@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING BAG</title>
+</head>
+<style>
+    #navbar{
+        height: 100px;
+        border: 1px solid;
+    }
+    h1{
+        margin-left: 10%;
+    }
+    #container{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        /* border: 1px solid; */
+    }
+    #left{
+        height: auto;
+        width: 70%;
+        /* border: 1px solid; */
+       
+    }
+    #span1{
+        margin-left: 100px;
+    }
+    #span2{
+        float: right;
+    }
+    hr{
+        border: 1px solid;
+    }
+    #right{
+        height: auto;
+        width: 30%;
+        /* border: 1px solid; */
+        margin-left: 100px;
+        padding: 5px;
+    }
+    
+    #product{
+        display: grid;
+        grid-template-columns: 10% 88%;
+        height: auto;
+        justify-content: space-between;
+        /* border: 1px solid; */
+    }
+    #product div{
+        width: auto ;
+        padding: 5px;
+        /* border: 1px solid; */
+    }
+    /* #main{
+        width: 30%;
+    } */
+    #main img{
+        width: 100%;
+    }
+  #TOTAL{
+    float: right;
+  }
+  #main2{
+    /* border: 1px solid; */
+    text-align: justify;
+    /* display: inline-block;
+    margin-top: 10%; */
+  }
+  #delete{
+    /* border: 1px solid; */
+    display: inline-block;
+    margin-top: 10%;
+      }
+      #delete:hover{
+        cursor: pointer;
+      }
+      #add{
+        /* border: 1px solid; */
+        display: inline-block;
+        margin-top: 10%;
+      }
+      #add:hover{
+        cursor: pointer;
+      }
+      #bottom{
+        /* border: 1px solid; */
+        padding: 20px;
+        line-height: 1.2rem;
+        
+      }
+      /* #bottom span{
+       
+      } */
+      .Order{
+        float: right;
+      }
+      #checkout{
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+
+      }
+      a{
+        text-decoration: none;
+      }
+      .but3{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}#empty{
+    
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+</style>
+<body>
+    <div id="navbar"></div>
+    <h1>Shopping Bag</h1>
+     <div id="container" >
+        <div id="left">
+            <span id="span1">ITEM</span> <span id="span2" >TOTAL</span>
+            <hr>
+            <div id="product"> </div>
+             <hr>
+             <div id="bottom"> 
+             <span>TOTAL</span> <span id="TOTAL">0</span> <br>
+             <span>Shipping estimate</span>  <span id="span2">Calculated at Checkout</span> <br>
+             <span>Order Total</span> <span id="OrderTotal" class="Order" > 0</span> <br>
+            </div> 
+        </div>
+        <div id="right">
+         <span>LOGGED IN AS</span>   <span class="Order" id="email">LOGGED IN AS</span> <br>
+
+        <p> Not your account?<a href="">Sign in as another user.</a> </p>  
+        <button id="checkout">PROCEED TO CHECKOUT</button>
+        </div>
+     </div>
+</body>
+</html>
+<script src="shoppingbag.js"></script>

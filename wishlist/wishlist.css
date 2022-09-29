@@ -1,0 +1,44 @@
+#wishlist{
+    width: 70%;
+    border: 1px solid;
+    margin: auto;
+    padding:10px;
+}
+#data{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+#full{
+    margin-top: 10%;
+    /* border: 1px solid; */
+}
+/* #data div{ */
+    /* border: 1px solid; */
+/* } */
+#data div img{
+    width: 100%;
+}
+.buttton{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+#topbtn{
+    background-color: black;
+    color: white;
+}
+#empty{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+#empty button{
+    border: 1px solid;
+}
+.but3{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,60 @@
+#promo{
+    display: flex;
+    /* grid-template-columns: 30% 30% 30%; */
+    /* gap: 2px; */
+    border: 1px solid;
+    justify-content: space-between;
+    margin: auto;
+}
+#promo1{
+display: grid;
+grid-template-columns: 30% 70%;
+align-items: center;
+/* border: 1px solid; */
+}
+#promo1 input{
+/* margin-left: -20%; */
+margin-top: 70%;
+
+}
+#promo1 label{
+/* border: 1px solid; */
+margin-left: 20%;
+}
+#signup{
+    margin: auto;
+    width: 30% ;
+    border: 1px solid;
+    padding: 10px;
+    /* margin: 100px; */
+}
+#email{
+    cursor: not-allowed;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+#continue{
+    width: 100% ;
+    padding: 10px ;
+    background-color: black;
+    color: white;
+}
+#continue:hover{
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
+.start{
+    text-align: start;
+}
+a{
+    text-decoration: none;
+}

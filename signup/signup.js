@@ -1,8 +1,9 @@
- 
-let button = document.getElementById("continue")
-button.addEventListener("click" , ()=>{
-    signup()
-})
+import nav from "../navbar/nav.js"
+
+let con = document.getElementById("navbar")
+con.innerHTML = nav
+
+
 
 //mens radio button 
  let mens  = document.getElementById("men")
@@ -25,17 +26,25 @@ let funs = 0 ;
     funs = 1 ;
  }
 
+
+ 
+let button = document.getElementById("continue")
+button.addEventListener("click" , ()=>{
+    signup()
+})
+
+
 // signup function 
-let count = 0 ;
+let count = 0 ;    // count for accessing wishlist , stored in local storage
 let email = document.getElementById("email") 
 email.value = localStorage.getItem("login")
 const signup = ()=>{
  //let email = document.getElementById("email").value
  let password = document.getElementById("password").value
- let passlength = document.getElementById("password").minlength
- console.log(passlength)
+//  let passlength = document.getElementById("password").minlength
+//  console.log(passlength)
  let obj={
-    email,
+   email: email.value,
      password,
  }
   if(fun===1){
@@ -46,26 +55,29 @@ obj.gender = men
   else if(funs===1){
     let womens  = document.getElementById("women").defaultValue
     obj.gender = womens
-     }else{
-
      }
+    console.log(obj)
     
-     //condition for paswoord and email 
+     //condition for password and email 
 
  if(email!=="" && password.length>6){
      if(obj.gender === "men"){
         count++;
         localStorage.setItem("count",count)
+        //window.location.href = ""
         alert("signup succesfull welcome to mens page").break
          
      }else if(obj.gender === "women"){
         count++;
         localStorage.setItem("count",count)
+       // window.location.href = " "
         alert("signup succesfull welcome to women page").break
+          
      }else{
         count++;
         localStorage.setItem("count",count)
+      // window.location.href = "./homepage/index.html"
         alert("signup succesfull welcome to home page").break
      }
-    }alert("password should be minimum of 6 characters")
+    }alert("password should be minimum of 6 characters").break
  }
