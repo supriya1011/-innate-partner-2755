@@ -1,3 +1,11 @@
+import nav from "../navbar/nav.js"
+
+let con = document.getElementById("navbar")
+con.innerHTML = nav
+
+
+
+
 let next = document.getElementById("continue")
 next.addEventListener("click" , ()=>{
     login()
@@ -10,6 +18,6 @@ const login = ()=>{
    // arr.push(email)
     console.log(email)
    localStorage.setItem("login" , email)
-  window.location.href = "signup.html"
+  window.location.href = "../signup/signup.html"
   
 }

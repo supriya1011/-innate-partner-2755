@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        #left{
+            width: 70%;
+            height: auto;
+            border: 1px solid;
+            padding: 10px;
+        }
+        #left input{
+            margin-bottom: 20px;
+            margin-top: 5px;
+            height: 25px;
+            width: 40%;
+        }
+        /* span{
+            margin-bottom: 5px;
+        } */
+        #right{
+            width: 30%;
+            height: auto;
+            border: 1px solid;
+            margin-left: 80px;
+            padding: 10px;
+        }
+        /* #span1{
+        
+    } */
+    #span2{
+        float: right;
+      
+        
+    }
+    .Order{
+        float: right;
+      }
+   #country{
+    display: inline-block;
+    border: 1px solid;
+    margin-top: 100px;
+   }
+  #place{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <h1>CHECKOUT</h1>
+    <div id="container">
+        <div id="left">
+            <p>SHIPPING ADDRESS</p> 
+            <hr>
+               
+                <span  id="span1">First Name</span>      <span id="span2">Last Name</span> <br>  
+                <input  type="text" id="FirstName">      <input style="float:right" type="text" id="LastName">  <br>
+                <span  id="span1">Street Address</span>   <span id="span2">Company (Optional)</span> <br>
+                <input  type="text" id="StreetAddress">      <input style="float:right" type="text" id="Company">  <br>
+                <span  id="span1">City</span>       <span id="span2">ZIP Or Postal Code</span> <br>
+                <input  type="text" id="City">      <input style="float:right" type="text" id="ZIP">  <br>
+                <span  id="span1">Country/Region</span>                 <span id="span2">State/Province</span> <br>
+                <input  type="text" id="Country">            <input style="float:right" type="text" id="State">  <br>
+                <span  id="span1">Phone</span>  <br>
+                <input  type="text" id="Phone">  <br>
+                <p>SHIPPING METHOD</p>
+                <hr>
+                <input type="radio" id="checkbox" checked="true" >   <label for="">$0.00 USD | 5 - 7 days | Express</label>
+                <p>PAYMENT METHOD</p>
+                <hr>
+                <input type="radio" id="checkbox" checked="true" >   <label for="">Pay with credit or debit card</label><img src="https://res.cloudinary.com/ssenseweb/image/upload/v1535478719/web/checkout/visa_borderless_v2.svg" alt=""> <br>
+                <input type="radio" id="checkbox"  >   <label for="">Pay with PayPal</label> <img src="https://res.cloudinary.com/ssenseweb/image/upload/v1535478719/web/checkout/paypal_borderless_v2.svg" alt=""><br>
+                <input type="radio" id="checkbox"  >   <label for="">Pay with Alipay</label> <img src="" alt="">
+                <p>CARD DETAILS</p>
+                <hr>
+                <span  id="span1" >Card number</span>      <span id="span2">Last Name</span> <br>  
+                <input id="Cardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">      <input style="float:right" type="text" id="LastName" placeholder="DD/YY">  <br>
+                <span  id="span1">Street Address</span>   <span id="span2">Company (Optional)</span> <br>
+                <input  type="text" id="FirstName">      <input style="float:right" type="text" id="LastName">  <br>
+                <p>BILLING ADDRESS</p>
+                <hr>
+                <input type="checkbox" id="checkbox"  checked="true" >   <label for="">Same as shipping address</label> <br>
+                <hr>
+
+        </div>
+        <div id="right">
+            <p id="summary">ORDER SUMMARY - (0) ITEM</p>
+            <hr>
+            <p>COUNTRY/REGION: INDIA / USD</p>
+            <hr>
+            <span  id="span1">Subtotal</span>      <span id="Subtotal" class="Order">0</span> <br>
+            <span  id="span1">Shipping total</span>      <span id="span2">(free)</span> <br>
+            <hr>
+            <span  id="span1">Order total </span>      <span id="total">0</span> <br>
+
+            <p>Important Notice
+                Our prices do not include Duty and VAT. Please consult your country/regions customs legislation for more information about potential additional charges.</p>
+                <button id="place">PLACE ORDER</button>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="checkout.js"></script>

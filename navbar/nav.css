@@ -9,8 +9,10 @@
 
 .wrapper{
   background: #fff;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
+  background-position: fixed;
+  position: sticky;
 }
 .wrapper nav{
   position: relative;
