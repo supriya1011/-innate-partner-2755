@@ -6,13 +6,26 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-
+#navbar{
+  background: #fff;
+  /* position: fixed; */
+  width: 100%;
+  background-position: fixed;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  position: sticky;
+  top:0px;
+}
 .wrapper{
   background: #fff;
   /* position: fixed; */
   width: 100%;
   background-position: fixed;
+
   position: sticky;
+
+  top:0px;
+
 }
 .wrapper nav{
   position: relative;
