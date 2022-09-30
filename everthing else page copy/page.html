@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+        background-color: rgba(250,251,252,255);
+    }
+    p{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      font-size:12px;
+      line-height: 70%;
+    }
+    #bold{
+        font-weight: bold;
+        margin-bottom: 20px;
+        
+    }
+    #bold1{
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top:50px;
+    }
+    p{
+        cursor:pointer;
+        
+    }
+    p:hover{
+        text-decoration:underline;
+        text-decoration-thickness:1.2px;
+    }
+    .underline1{
+        cursor:pointer;
+        
+    }
+    .underline1:hover{
+        text-decoration:underline;
+        /* text-decoration-thickness:1.2px; */
+    }
+    #main{
+        display: grid;
+        grid-template-columns: 230px 970px 120px;
+        grid-template-rows: 20px;
+        gap:80px;
+    }
+    #main>div{
+        /* border:1px solid red; */
+        margin-top:50px;
+    }
+    .zoom-in {
+    cursor: zoom-in;
+    }
+    .zoom-in:hover{
+        width:150px;
+        height: 150px;
+    }
+    #left{
+        margin-left:50px;
+    }
+    #mid{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 350px;
+        gap:40px;
+    }
+    /* #mid>div{
+        margin:20px;
+    } */
+    #mid>div>img{
+        width:100%;
+        /* height:270px; */
+    }
+</style>
+<body>
+    <div id="navbar">
+    </div>
+
+    <div id="main">
+        <div id="left">
+            <p id="bold" class="underline1">ALL CATEGORIES</h4>
+            <p>ACTIVITY</p>
+            <p>HOME</p>
+            <p>KIDS</p>
+            <p>PETS</p>
+            <p>SELF-CARE</p>
+            <p>TECHNOLOGY</p>
+            <p id="bold1" class="underline1">ALL DESINGERS</p>
+            <p>(a.o.t)</p>
+            <p>032c</p>
+            <p>101 Copenhagen</p>
+            <p>1017 ALYX 9SM</p>
+            <p>1882 Ltd.</p>
+            <p>19-69</p>
+            <p>1986</p>
+            <p>2222STUDIO</p>
+            <p>A BETTER FEELING</p>
+            <p>A-COLD-WALL*</p>
+            <p>A.P.C.</p>
+            <p>ÅBEN</p>
+            <p>Abid Javed</p>
+            <p>Acne Studios</p>
+            <p>ACRONYM</p>
+            <p>Adam Ross Ceramics</p>
+            <p>ADER error</p>
+            <p>adidas Kids</p>
+            <p>Aesop</p>
+            <p>Afield Out</p>
+            <p>Agustina Bottoni</p>
+            <p>AIAIAI</p>
+            <p>Alessi</p>
+            <p>Alexander McQueen</p>
+            <p>Alien Workshop</p>
+            <p>Alltimers</p>
+            <p>Alo</p>
+            <p>amen</p>
+            <p>AMI Alexandre Mattiussi</p>
+            <p>AMIRI</p>
+            <p>Amoln</p>
+            <p>and wander</p>
+            <p>ANGULUS</p>
+            <p>Anissa Kermiche</p>
+            <p>Ann Demeulemeester</p>
+            <p>Anna Sui Mini</p>
+            <p>applicata</p>
+            <p>Ashley Williams</p>
+            <p>Asics</p>
+            <p>Assouline</p>
+            <p>Asus</p>
+            <p>AUGUST&PIERS</p>
+            <p>Axel Arigato</p>
+            <p>AYANEO</p>
+            <p>AYTM</p>
+            <p>B.Yoga</p>
+            <p>Baina</p>
+            <p>Bala</p>    
+            <p>Balenciaga</p>
+            <p>Balenciaga Kids</p>
+            <p>Balmain</p>
+            <p>Bang & Olufsen</p>
+            <p>BAPE</p>
+            <p>Barbour</p>
+            <p>BASIS</p>
+            <p>BEAMS JAPAN</p>
+            <p>BEAMS PLUS</p>
+            <p>bi.du.haev</p>
+            <p>Billionaire Boys Club</p>
+            <p>Binu Binu</p>
+            <p>BlabLakia</p>
+            <p>BLACKSAW</p>
+            <p>Bless</p>
+            <p>Blind Barber</p>
+            <p>BO(Y)SMANS</p>
+            <p>Bobo Choses</p>
+            <p>Bocci</p>
+            <p>Bode</p>
+            <p>Bonmot Organic</p>
+            <p>Bonpoint</p>
+            <p>Boo Oh</p>
+            <p>Bottega Veneta</p>
+            <p>Boy Smells</p>
+            <p>Brain Dead</p>
+            <p>Bristol Studio</p>
+            <p>Brutes Ceramics</p>
+            <p>Burberry</p>
+            <p>BYBORRE</p>
+            <p>Bzippy</p>
+            <p>C.P. Company Kids</p>
+            <p>Calen Knauf</p>
+            <p>Call me 917</p>
+            <p>Campfire Audio</p>
+            <p>Canada Goose Kids</p> 
+            <p>Canem Studio</p>
+            <p>Capra Designs</p>
+            <p>Carhartt Work In Progress</p>
+            <p>Carl Durkow</p>
+            <p>Carne Bollente</p>
+            <p>Carolina Levinton</p>
+            <p>Casablanca</p>
+            <p>CASETiFY</p>
+            <p>Cash Only™</p>
+            <p>Caudex</p>
+            <p>CFCL</p>
+            <p>Charles Jeffrey Loverboy</p>
+            <p>CHIMI</p>
+            <p>Chloé</p>
+            <p>Chopova Lowena</p>
+            <p>Christian Louboutin</p>
+            <p>Cinnamon Projects</p>
+            <p>Claire Duport</p>
+            <p>Clarks Originals</p>
+            <p>Cleverly Laundry</p>
+            <p>Clot</p>
+            <p>Cloud7</p>
+            <p>Coco Village</p>
+            <p>COKI</p>
+            <p>Collina Strada</p>
+            <p>Comme des Garçons Parfums</p>
+            <p>Comme des Garçons Play</p>
+            <p>Common Body</p>
+            <p>Common Projects</p>
+            <p>Commune</p>  
+            <p>Completedworks</p>
+            <p>Converse</p>
+            <p>Coqui Coqui Perfumes</p>
+            <p>COTODAMA</p>
+            <p>Courant</p>
+            <p>Courrèges Parfums</p>
+            <p> Cremate London</p>
+            <p>CRLNBSMNS</p>
+            <p>Crocs</p>
+            <p>   CULTI MILANO</p>
+            <p>   CURIO PRACTICE</p>
+            <p>   Curionoir</p>
+            <p>Curves by Sean Brown</p>
+            <p>    CW&T</p>
+            <p>    D-Haene Studio</p>
+            <p>    D.S. & DURGA</p>
+            <p>    Daily Brat</p>
+            <p>    David Chipperfield</p>
+            <p>    Degoey Planet</p>
+            <p>    Denon</p>
+            <p>    departo</p>
+            <p> Dime</p>
+            <p>District Vision</p>
+            <p>Dolce & Gabbana</p>
+            <p>Doublet</p>
+            <p>Dr. Martens</p>
+            <p>drew house</p>
+            <p>Drippy Pots</p>
+            <p>Dsquared2</p>
+            <p>DUM KERAMIK</p>
+            <p>Dusen Dusen</p>
+            <p>Earl of East</p>
+            <p>Eckhaus Latta</p>
+            <p>edenworks</p>
+            <p>Editions Milano</p>
+            <p>Ember</p>
+            <p>Endeavor Snowboards</p>
+            <p>Endless Joy</p>
+            <p>Enfants Riches Déprimés</p>
+            <p>EQUIPT</p>
+            <p>Erdem</p>
+            <p>ERES</p>
+            <p>ERL</p>
+                <p>Ermenegildo Zegna</p>
+                <p>Essentials</p>
+                <p>Estelle Colored Glass</p>
+                <p>Evermore London</p>
+                <p>F-LAGSTUF-F</p>
+                <p>F. Miller</p>
+                <p>Fable Yoga</p>
+                <p>Fantastical Creatures Club</p>
+                <p> Fazeek</p>
+                    <p>Fear of God</p>
+                        <p>Feldspar</p>
+                            <p>Fellow</p>
+                                <p>ferm LIVING</p>
+                                    <p>fferrone</p>
+                                        <p>Firebelly Tea</p>
+                                            <p>Fish & Kids</p>
+                                                <p>FLAKIKI</p>
+                                                    <p>Flamingo Estate</p>
+                                                        <p>Forever Studio</p>
+                                                            <p> Forma Rosa Studio</p>
+                                                                <p>førs studio</p>
+                                                                    <p>Found My Animal</p>
+                                                                        <p>FRAMA</p>
+                                                                            <p>Fredericks & Mae</p>
+                                                                                <p> Frenckenberger</p>
+                                                                                    <p>Frescobol Carioca</p>
+                                                                                        <p>FRIZBEE CERAMICS</p>
+                                                                                            <p>Fusalp</p>
+                                                                                                <p>FYSIK</p>
+                                                                                                    <p> Gary Bodker Designs</p>
+                                                                                                        <p> Gauntlett Cheng</p>
+                                                                                                            <p>GCDS Kids</p>
+            
+               <p>Georg Jensen</p> 
+               <p>Gil Rodriguez</p>
+               <p>Girl Skateboards</p>
+               <p>giu giu</p>
+               <p>Givenchy</p>
+               <p>Golden Goose</p>
+               <p>Goodbeast</p>
+               <p>Gramicci Kids</p>
+               <p>Greg Lauren</p>
+               <p> Gucci</p>
+               <p>Gustaf Westman Objects</p>
+               <p>Han Kjobenhavn</p>
+               <p>Hana Karim Studio</p>
+               <p>Hannah Jewett</p>
+               <p>Hannah Simpson Studio</p>
+               <p>Happy99</p>
+               <p>Harlie Brown Studio</p>
+               <p>Hasami Porcelain</p>
+               <p>Hawthorne</p>
+               <p>HAY</p>
+               <p>Haydenshapes</p>
+               <p>HELIOT EMIL</p>
+               <p>HELMSTEDT</p>
+               <p>Henry Holland Studio</p>
+               <p>Heron Preston</p>
+               <p>Hervet Manufacturier</p>
+               <p>Holzweiler</p>
+               <p>Hot Wire Extensions</p>
+               <p>Humanrace</p>
+               <p>Hunter</p>
+               <p>Hydro Flask</p>
+               <p> IAAI</p>
+               <p>ICECREAM</p>
+               <p>IIUVO</p>
+               <p>Ilse Jacobsen</p>
+               <p>IN GOLD WE TRUST PARIS</p>
+               <p>Isabel Marant</p>
+               <p>Isle Skateboards</p>
+               <p>J. Hill’s Standard</p>
+               <p>Janie Korn</p>
+               <p>Jars Céramistes</p>
+               <p>Jellymallow</p>
+               <p>Jess Sellinger Ceramics</p>
+               <p>Jil Sander</p>
+               <p>JIU JIE</p>
+               <p>Joseph Algieri</p>
+               <p>Joy Resolve</p>
+               <p>Joya Studio</p>
+               <p>JW Anderson</p>
+               <p>K-Way</p>
+               <p>KANZ</p>
+               <p> Karakter</p>
+               <p>kenko</p>
+               <p>Kenzo</p>
+               <p>KHAITE</p>
+               <p>Kids Worldwide</p>
+               <p>Kika Vargas</p>
+               <p>KIMHĒKIM</p>
+               <p>KINTO</p>
+               <p>KIOSK48TH</p>
+               <p>Klipsch</p>       
+                <p>knIndustrie</p>
+                <p>KNWLS</p>
+                <p>KNWLS</p>
+                <p>Købn</p>
+                <p>Kodomo BEAMS</p>
+                <p>KOO</p>
+                <p>Ksubi</p>
+                <p>Kvadrat/Raf Simons</p>
+                <p>Kwaidan Editions</p>
+                <p>L'Atelier du Vin</p>
+                <p>L'OBJET</p>
+                <p>LARQ</p>
+                <p>Lateral Objects</p>
+                <p>Le Kasha</p>
+                <p>LE17SEPTEMBRE</p>
+                <p>Lemaire</p>
+                <p>LESSE</p>
+                <p>Lexon</p>
+                <p>LGS Studio</p>
+                <p>Light + Ladder</p>
+                <p>Light Phone</p>
+                <p>Ligne Noire</p>
+                <p>Lily Pearmain</p>
+                <p>LISH</p>
+                <p>Little Beast</p>
+                <p>Loewe</p>
+                <p>Loftie</p>
+                <p>Lola Mayeras</p>
+                <p>Lomography</p>
+                <p>Longlivethequeen</p>
+                <p>Los Objetos Decorativos</p>
+                <p>Louisa Ballou</p>
+                <p>Luckytry</p>
+                <p>Luisa Beccaria</p>
+                <p>Luna Del Pinal</p>
+                <p>MAAP</p>
+                <p>Mackage</p>
+                <p>Macrene actives</p>
+                <p>MAD et LEN</p>
+                <p>maed for mini</p>
+                <p>MAGNIBERG</p>
+                <p>Maiden Name</p>
+                <p>Main Story</p>
+                <p>Maison Crivelli</p>
+                <p> Maison Kitsuné</p>
+                <p> Maison Louis Marie</p>
+                <p>Maison Mangostan</p>
+                <p> Maison Margiela</p>
+                <p>MAKI RUGS</p>
+                <p>Malin Pierre</p>
+                <p>Maman Rugs</p>
+                <p>Mammut</p>
+                <p>Manduka</p>
+                <p>Manors Golf</p>
+                <p>Mar Mar</p>
+                <p>Marc Jacobs</p>
+                <p>Marc Jacobs Heaven</p>
+                <p>Marcelo Burlon County of Milan</p>
+                <p>Mardi Mercredi Les Petits</p>
+                <p>Maria Enomoto Glass</p>
+                <p>Marine Serre</p>
+                <p>Marloe Marloe</p>
+                <p>Marni</p>
+                <p>Marshall</p>
+                <p>Marten Herma Anderson</p>
+                <p>Martine Rose</p>
+                <p> Master & Dynamic</p>
+                <p>mastermind JAPAN</p>
+                <p>Material</p>
+                <p>Mellow</p>
+                <p>même.</p>
+                <p>MENU</p>
+                <p>Merlot</p>
+                <p>Meyou Paris</p>
+                <p>MiiR</p>
+                <p>Milo Made Ceramics</p>
+                <p>Mini Melissa</p>
+                <p>Mini Rodini</p>
+                <p>MISBHV</p>
+                <p>Misha & Puff</p>
+                <p>MM6 Maison Margiela</p>
+                <p>Modern Sprout</p>
+                <p>Modest Vintage Player</p>
+                <p>Modus Bearings</p>
+                <p>Mojow</p>
+                <p>Molo</p>
+                <p>Mon Dada</p>
+                <p>Moncler Enfant</p>
+                <p>Moncler Genius</p>
+                <p>Moncler Grenoble</p>
+                <p>Mono</p>
+                <p>Moon Boot</p>
+                <p>MOON Ultra</p>
+                <p>More Joy</p>
+                <p>Moro Dabron</p>
+                <p>Moschino</p>
+                <p>Mou</p>
+                <p>Mowalola</p>
+                <p>Mr. Dog</p>
+                <p>MSGM Kids</p>
+                <p>Mud Australia</p>
+                <p>Museum of Peace & Quiet</p>
+                <p>Mush Studios</p>
+                <p>M’A Kids</p>
+                <p>Natalia Criado</p>
+                <p>Nate Cotterman</p>
+                <p>Nathalee Paolinelli</p>
+                <p>Nathalie Schreckenberg</p>
+                <p>Native Union</p>
+                <p>naza</p>
+                <p>NEEDLES</p>
+                <p>Neighborhood</p>
+                <p>New Balance</p>
+                <p>New Tendency</p>
+                <p>New Works</p>
+                <p>Nicholas Bijan Pourfard</p>
+                <p>Nike Jordan</p>
+                <p>Niko June</p>
+                <p>NIMU</p>
+                <p>Noah</p>
+                <p>Nocs Design</p>
+                <p>Normann Copenhagen</p>
+                <p>Nothing</p>
+                <p>NUDE Glass</p>
+                <p>Numbering</p>
+                <p></p>
+            
+                
+                <!-- Oakley
+                Off-White
+                Ojas
+                Okej
+                Olga Goose Candle
+                OOOF
+                OORYKIDS
+                Orbs
+                Organic Zoo
+                Ottolinger
+                Our Legacy
+                PAGERIE
+                Palm Angels
+                Palmes
+                PANGAIA
+                Paola Paronetto
+                Pas Normal Studios
+                Pass~Port
+                Paul Smith
+                Paul Smith 50th Anniversary
+                Paula Canovas Del Vas
+                PEdALED
+                PENT.
+                Perks and Mini
+                Perla Valtierra
+                Petit Bateau
+                Petit Pli
+                Pets So Good
+                Phaidon
+                Picture Wheel Company
+                Piera Bochner
+                Pioneer DJ
+                POLSPOTTEN
+                Polymorf
+                Poster Girl
+                Pro-Ject
+                Proba Home
+                Project 213A
+                project full
+                PS by Paul Smith
+                Psychworld
+                PULSEROLL
+                Quiet Golf
+                R+D.LAB
+                raawii
+                Raf Simons
+                RAINS
+                Rassvet
+                RÄTHEL & WOLF
+                Rave Review
+                Ray-Ban
+                Reflections Copenhagen
+                Repose AMS
+                retaW
+                RETO Project
+                Rhea Kalo
+                Rhude
+                Rick Owens
+                RiRa
+                RODI STUDIO
+                Round Edition
+                RRL
+                Rui
+                Sabre
+                Saintwoods
+                Samaya
+                Sandbox
+                SANTOS.STUDIO
+                Sarah Chapman
+                Sargadelos
+                Satisfy
+                Saunders
+                Schneid Studio
+                season eqpt.
+                SEASONS
+                Seb Brown
+                See Scout Sleep
+                Seletti
+                Serapis
+                Serax
+                SGHR Sugahara
+                SGW Lab
+                SHAQUDA
+                Sheyn
+                Shushu/Tong
+                SIGG
+                Siup Studio
+                SKINNY
+                Slash Objects
+                Slorence
+                SML. Wheels
+                Smythson
+                Snow Peak
+                Soft Skills
+                Sophie Bille Brahe
+                Sophie Buhai
+                SOPHIE FARRAR
+                Sophie Lou Jacobsen
+                Soulland
+                Sporty & Rich
+                Stan Editions
+                Stella McCartney
+                Stelton
+                Steph Woods
+                Sticky Glass
+                Stockholm (Surfboard) Club
+                STOFF Nagel
+                Stone Island
+                Stone Island Junior
+                Stories of Italy
+                STRATEAS CARLUCCI
+                Stray Rats
+                Studio Corkinho
+                Studio EO
+                Studio Kiff
+                studio La double clique
+                Studio Variously
+                Stutterheim
+                Stutterheim Kids
+                Suicoke
+                SUNDAY DONUT CLUB®
+                Sunnei
+                Superga
+                Syng
+                Tableau
+                Tangram Factory
+                Tapper
+                TASCHEN
+                Teenage Engineering
+                Tekla
+                Tekla Kids
+                Teva
+                The Animals Observatory
+                The Campamento
+                The Elder Statesman
+                The Farmers Market Global
+                The North Face
+                The North Face Kids
+                The Observatory Studio
+                The Row
+                THEM SKATES
+                thght snctry
+                Thom Browne
+                Tina Frey Designs
+                TINYCOTTONS
+                Tom Dixon
+                TOM FORD
+                Tom Kemp
+                Tom Sachs
+                Tom Wood
+                Transparent
+                Trudon
+                TWOTWO
+                Ugly Rugly
+                Undercover
+                UNIQ
+                United Shapes
+                Urban Sophistication
+                Valeria Vasi
+                Vans
+                Vase Tapis Tapis
+                VEERT
+                VEJA
+                Verre D’Onge
+                Versace
+                VETEMENTS
+                VIGYL
+                VIP
+                Viso Project
+                Visvim
+                Vitesy
+                Vitruvi
+                Viv Lee
+                WACKO MARIA
+                Walden
+                Ware of the Dog
+                Wax Charms
+                We A Family
+                We11done
+                Weekend House Kids
+                Weelywally
+                Welcome Skateboards
+                West Crystal Unit
+                Whirl & Whittle
+                Wildflower Cases
+                Wildkind
+                WKND Skateboards
+                Wolf & Miu
+                Wolf & Rita
+                Wooj
+                Workaday Handmade
+                Wretched Flowers
+                Wynken
+                Y/Project
+                Yaak Optics
+                YALI Glass
+                YIELD
+                Yniq
+                Yucca Fins
+                ZEGNA
+                Zouzou Rugs -->
+            <p></p>     
+        </div>
+        <div id="mid">
+
+        </div>
+        <div id="right">
+            <p id="bold" class="underline1">SORT</h4>
+                <p>Latest arrivals</p>
+                <p>Trending</p>
+                <p>Price: Low to high</p>
+                <p>Price: High to low</p>
+                <p id="bold1" class="underline1">COLORS</p>
+                <p>ALL COLORS</p>
+                <p>Black</p>
+                <p>Blue</p>
+                <p>Brown</p>
+                <p>Burgundy</p>
+                <p>Gray</p>
+                <p>Green</p>
+                <p>Navy</p>
+                <p>Orange</p>
+                <p>Pink</p>
+                <p>Purple</p>
+                <p>Red</p>
+                <p>Tan</p>
+                <p>White</p>
+                <p>Yellow</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="page.js"></script>
