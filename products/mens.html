@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <style>
     body{
@@ -80,15 +83,6 @@
 </style>
 <body>
     <div id="navbar">
-        <p class="underline">MENSWEAR</p>
-        <p class="underline">WOMENSWEAR</p>
-        <p class="underline">EVERYTHING ELSE</p>
-        <p class="underline">SEARCH</p>
-        <img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt="" id="img1">
-        <p class="underline">ENGLISH</p>
-        <p class="underline">LOGIN</p>
-        <p class="underline">WISHLIST</p>
-        <p class="underline">SHOPPING BAG(0)</p>
     </div>
     <div id="main">
         <div id="left">
@@ -104,7 +98,7 @@
             <p>Body: 100% polyester. Fill: 100% polyester. Lining 1: 71% cotton, 29% polyester. Lining 2: 55% polyester, 45% viscose.Imported.</p>
             <p>222875M175000</p>     
         </div>
-        <div id="mid"><p class="zoom-in">zoom-in</p></div>
+        <div id="mid"></div>
         <div id="right">
             <select name="" id="select" placeholder="">
                 <option value="">SELECT A SIZE</option>
@@ -114,14 +108,17 @@
                 <option value="">X - Only 2 remaining</option>
                 <option value="">XL - Only 1 remaining</option>
             </select>
-            <button>ADD TO BAG</button>
-            <button>ADD TO WISHLIST</button>
+            <button id="bag">ADD TO BAG</button>
+            <button id="wishlist">ADD TO WISHLIST</button>
             <p>Item Runs </p>
             <p>True to size</p>
             <p>Model is 6ft 2" and wears size L.</p>
             <p>SIZE GUIDE</p>
             <p>India : Free shipping on orders over $500 USD</p>
         </div>
+    </div>
+    <div id="footer">
+        <div id="foot"></div>
     </div>
 </body>
 </html>
@@ -131,3 +128,19 @@
     console.log(window.location.href)
     window.location.href="mens.html"
 </script> -->
+<script type="module">
+    import nav from '../navbar/nav.js';
+    console.log(nav);
+    let nav1=document.getElementById("navbar");
+    nav1.innerHTML=nav;
+</script>
+<script type="module">
+    import footer from '../footer/footer.js';
+    console.log(footer);
+    let footer1=document.getElementById("foot");
+    footer1.innerHTML=footer;
+
+    
+
+</script>
+<script src="mens.js"></script>

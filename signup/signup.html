@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
      <link rel="stylesheet" href="signup.css">
+     <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <body>
     <div id="navbar"></div>
@@ -31,7 +33,15 @@
          <p class="start">You may unsubscribe at any time</p>
          <p class="start">To find out more, please visit our <a href="https://www.ssense.com/en-in/privacy-policy"> Privacy Policy</a></p>
     </div>
-    
+    <div id="footer">
+        <div id="foot"></div>
+    </div>
 </body>
 </html>
 <script type="module" src="signup.js"></script>
+<script type="module">
+    import footer from '../footer/footer.js';
+    console.log(footer);
+    let footer1=document.getElementById("foot");
+    footer1.innerHTML=footer;
+</script>

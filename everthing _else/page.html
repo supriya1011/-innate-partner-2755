@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <style>
      body{
@@ -44,11 +46,11 @@
     #main{
         display: grid;
         grid-template-columns: 230px 970px 120px;
-        grid-template-rows: 20px;
+        /* grid-template-rows: 200px; */
         gap:80px;
+       
     }
     #main>div{
-        /* border:1px solid red; */
         margin-top:50px;
     }
     .zoom-in {
@@ -698,6 +700,19 @@
                 <p>Yellow</p>
         </div>
     </div>
+        <div id="foot"></div>
 </body>
 </html>
 <script src="page.js"></script>
+<script type="module">
+    import nav from '../navbar/nav.js';
+    console.log(nav);
+    let nav1=document.getElementById("navbar");
+    nav1.innerHTML=nav;
+</script>
+<script type="module">
+    import footer from '../footer/footer.js';
+    console.log(footer);
+    let footer1=document.getElementById("foot");
+    footer1.innerHTML=footer;
+</script>

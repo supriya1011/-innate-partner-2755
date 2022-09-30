@@ -1,3 +1,14 @@
+import nav from './component/nav.js';
+console.log(nav);
+let nav1=document.getElementById("navbar");
+nav1.innerHTML=nav;
+
+
+import footer from './component/footer.js';
+console.log(footer);
+let footer1=document.getElementById("foot");
+footer1.innerHTML=footer;
+
 
 
 import { apple } from "./component/accessories.js";
@@ -374,12 +385,15 @@ const displayTable = (data) => {
         let price = document.createElement("p")
         price.innerText = `$ ${el.price}`
 
-        box.addEventListener("click", function () {
+        box.addEventListener("click",function(){
+                 
+            let x=data.splice(i,1)
 
-            x = data.splice(i, i)
+        
 
-            console.log(x)
+            localStorage.setItem("product",JSON.stringify(x))
 
+            window.location.href="../products/mens.html"
         })
 
         box.append(img, brand, details, price)

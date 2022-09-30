@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOPPING BAG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <style>
-    #navbar{
+    /* #navbar{
         height: 100px;
         border: 1px solid;
-    }
+    } */
     h1{
         margin-left: 10%;
     }
@@ -21,6 +24,9 @@
         margin-top: 5%;
         /* border: 1px solid; */
     }
+    #footer{
+    margin-top: 400px;
+}
     #left{
         height: auto;
         width: 70%;
@@ -142,6 +148,21 @@
         <button id="checkout">PROCEED TO CHECKOUT</button>
         </div>
      </div>
+     <div id="footer">
+      <div id="foot"></div>
+  </div>
 </body>
 </html>
 <script src="shoppingbag.js"></script>
+<script type="module">
+  import nav from '../navbar/nav.js';
+  console.log(nav);
+  let nav1=document.getElementById("navbar");
+  nav1.innerHTML=nav;
+</script>
+<script type="module">
+  import footer from '../footer/footer.js';
+  console.log(footer);
+  let footer1=document.getElementById("foot");
+  footer1.innerHTML=footer;
+</script>

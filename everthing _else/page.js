@@ -5,7 +5,7 @@
 const getData = async () => {
 
     try {
-        let res = await fetch(`http://localhost:3000/ssense`);
+        let res = await fetch(`http://localhost:3000/ssense1`);
         // console.log(res)
         let data = await res.json();
         // console.log(data[0].details)
@@ -27,7 +27,7 @@ function appendData(data){
 
     data_div.innerHTML=null;
 
-    data.forEach((el) => {
+    data.forEach((el,i) => {
         let div=document.createElement("div");
 
         let p_name=document.createElement("p");
@@ -39,6 +39,18 @@ function appendData(data){
 
         let img=document.createElement("img");
         img.src=el.img;
+
+        
+        div.addEventListener("click",function(){
+                 
+            let x=data.splice(i,1)
+
+        
+
+            localStorage.setItem("product",JSON.stringify(x))
+
+            window.location.href="../products/mens.html"
+        })
 
         div.append(img,p_name,p_rating);
         data_div.append(div);

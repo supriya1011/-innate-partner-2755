@@ -64,20 +64,20 @@ obj.gender = men
      if(obj.gender === "men"){
         count++;
         localStorage.setItem("count",count)
-        //window.location.href = ""
+        window.location.href = "../menswear/index.html"
         alert("signup succesfull welcome to mens page").break
          
      }else if(obj.gender === "women"){
         count++;
         localStorage.setItem("count",count)
-       // window.location.href = " "
+       window.location.href = "../woman/index.html"
         alert("signup succesfull welcome to women page").break
           
      }else{
         count++;
         localStorage.setItem("count",count)
-      // window.location.href = "./homepage/index.html"
-        alert("signup succesfull welcome to home page").break
+      window.location.href = "../everthing _else/page.html"
+        alert("signup succesfull welcome to Else page").break
      }
     }alert("password should be minimum of 6 characters").break
  }

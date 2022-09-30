@@ -2,11 +2,12 @@
  // checkout page event listener
  let checkout = document.getElementById("checkout")
  checkout.addEventListener("click" , ()=>{
-   window.location.href = "checkout.html"
+   window.location.href ="../checkout/checkout.html"
  })
 
- 
-
+//  let data1 = document.getElementById("bag")
+//  let shopping = document.getElementById("shopping")
+//  shopping.innerHTML = data1.length
 // let arr1 = [{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":600}]
 // localStorage.setItem("bag",JSON.stringify(arr1))
 
@@ -64,9 +65,9 @@ div.id = "main"
 let div1 = document.createElement("div")
 div1.id = "main2"
 let image = document.createElement("img")
-image.src = el.image
+image.src = el.img
 let p1 = document.createElement("span")
-p1.innerHTML = el.brand
+p1.innerHTML = el.details
 let br = document.createElement("br")
 let p = document.createElement("span")
 p.innerHTML = el.price
