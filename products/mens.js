@@ -1,17 +1,14 @@
 let data=JSON.parse(localStorage.getItem("product"))
 data.forEach((el)=>{
     let arr=JSON.parse(localStorage.getItem("bag"))|| [];
+
 document.getElementById("bag").addEventListener("click",function(){
 
     
 
     arr.push(el)
-
+alert("product added to bag")
 localStorage.setItem("bag",JSON.stringify(arr))
-let data1 = JSON.parse(localStorage.getItem("bag"))
-
-let shopping = document.getElementById("shopping")
-shopping.innerHTML = `SHOPPING BAG ${data1.length}`
 
 })
 let arr2=JSON.parse(localStorage.getItem("wishlist"))|| [];
@@ -20,12 +17,21 @@ document.getElementById("wishlist").addEventListener("click",function(){
 
 
     arr2.push(el)
-
+    alert("product added to wishlist")
 localStorage.setItem("wishlist",JSON.stringify(arr2))
 
 
 })
 })
+
+
+
+// let data22 = JSON.parse(localStorage.getItem("bag"))
+// if(data22 != undefined){
+// let shopping = document.getElementById("shopping")
+// shopping.innerText = data22.length;
+// }
+
 // let arr=JSON.parse(localStorage.getItem("bag"))|| [];
 // document.getElementById("bag").addEventListener("click",function(){
 

@@ -5,6 +5,13 @@ con.innerHTML = nav
 
 
 
+let data22 = JSON.parse(localStorage.getItem("bag"))
+if(data22 !=  undefined){
+let shopping = document.getElementById("shopping")
+shopping.innerText = `  ${data22.length}`;
+}
+
+
 
 let next = document.getElementById("continue")
 next.addEventListener("click" , ()=>{

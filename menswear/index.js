@@ -1,11 +1,11 @@
 
-  import nav from './component/nav.js';
+  import nav from '../navbar/nav.js';
   console.log(nav);
   let nav1=document.getElementById("navbar");
   nav1.innerHTML=nav;
 
 
-  import footer from './component/footer.js';
+  import footer from '../footer/footer.js';
   console.log(footer);
   let footer1=document.getElementById("foot");
   footer1.innerHTML=footer;
@@ -17,9 +17,9 @@ import { apple } from "./component/accessories.js";
 
 
 let data1 = JSON.parse(localStorage.getItem("bag"))
-if(data1){
+if(data1 != undefined){
 let shopping = document.getElementById("shopping")
-shopping.innerText = `SHOPPING BAG ${data1.length}`;
+shopping.innerText = `   ${data1.length}`;
 }
 document.getElementById("acc").addEventListener("click", function () {
 
@@ -493,4 +493,10 @@ function result(data) {
 
 }
 
+
+// let data1 = JSON.parse(localStorage.getItem("bag"))
+// if(data1!=""){
+// let shopping = document.getElementById("shopping")
+// shopping.innerText = `SHOPPING BAG ${data1.length}`;
+// }
 
