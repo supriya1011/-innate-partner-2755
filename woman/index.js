@@ -1,15 +1,21 @@
-import nav from './component/nav.js';
+import nav from '../navbar/nav.js';
 console.log(nav);
 let nav1=document.getElementById("navbar");
 nav1.innerHTML=nav;
 
 
-import footer from './component/footer.js';
+import footer from '../footer/footer.js';
 console.log(footer);
 let footer1=document.getElementById("foot");
 footer1.innerHTML=footer;
 
 
+
+let data1 = JSON.parse(localStorage.getItem("bag"))
+if(data1!= undefined){
+let shopping = document.getElementById("shopping")
+shopping.innerText = `   ${data1.length}`;
+}
 
 import { apple } from "./component/accessories.js";
 

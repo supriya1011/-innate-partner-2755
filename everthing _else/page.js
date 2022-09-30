@@ -1,5 +1,10 @@
 
 
+// let data1 = JSON.parse(localStorage.getItem("bag"))
+// if(data1!=""){
+// let shopping = document.getElementById("shopping")
+// shopping.innerText = `   ${data1.length}`;
+// }
 
 
 const getData = async () => {
@@ -55,4 +60,12 @@ function appendData(data){
         div.append(img,p_name,p_rating);
         data_div.append(div);
     });
+}
+
+
+
+let data22 = JSON.parse(localStorage.getItem("bag"))
+if(data22 !=  undefined){
+let shopping = document.getElementById("shopping")
+shopping.innerText = ` ${data22.length}`;
 }

@@ -5,11 +5,14 @@
    window.location.href ="../checkout/checkout.html"
  })
 
-//  let data1 = document.getElementById("bag")
-//  let shopping = document.getElementById("shopping")
-//  shopping.innerHTML = data1.length
-// let arr1 = [{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":600}]
-// localStorage.setItem("bag",JSON.stringify(arr1))
+
+
+// let data22 = JSON.parse(localStorage.getItem("bag"))
+// if(data22!= undefined){
+// let shopping = document.getElementById("shopping")
+// shopping.innerHTML = ` ${data22.length}`;
+// }
+
 
 let cont = document.getElementById("container")
 let email = document.getElementById("email")
