@@ -16,11 +16,6 @@ import { apple } from "./component/accessories.js";
 
 
 
-let data1 = JSON.parse(localStorage.getItem("bag"))
-if(data1 != undefined){
-let shopping = document.getElementById("shopping")
-shopping.innerText = `   ${data1.length}`;
-}
 document.getElementById("acc").addEventListener("click", function () {
 
     let tri = document.getElementById("accc")

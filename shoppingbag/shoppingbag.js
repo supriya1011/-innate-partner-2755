@@ -7,11 +7,7 @@
 
 
 
-// let data22 = JSON.parse(localStorage.getItem("bag"))
-// if(data22!= undefined){
-// let shopping = document.getElementById("shopping")
-// shopping.innerHTML = ` ${data22.length}`;
-// }
+
 
 
 let cont = document.getElementById("container")

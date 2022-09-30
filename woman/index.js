@@ -11,11 +11,6 @@ footer1.innerHTML=footer;
 
 
 
-let data1 = JSON.parse(localStorage.getItem("bag"))
-if(data1!= undefined){
-let shopping = document.getElementById("shopping")
-shopping.innerText = `   ${data1.length}`;
-}
 
 import { apple } from "./component/accessories.js";
 

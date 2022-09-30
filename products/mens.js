@@ -26,11 +26,7 @@ localStorage.setItem("wishlist",JSON.stringify(arr2))
 
 
 
-// let data22 = JSON.parse(localStorage.getItem("bag"))
-// if(data22 != undefined){
-// let shopping = document.getElementById("shopping")
-// shopping.innerText = data22.length;
-// }
+
 
 // let arr=JSON.parse(localStorage.getItem("bag"))|| [];
 // document.getElementById("bag").addEventListener("click",function(){
