@@ -32,5 +32,3 @@ const place = ()=>{
 }
 
 
-let shopping = document.getElementById("shopping")
-shopping.innerHTML = data1.length

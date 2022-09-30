@@ -2,11 +2,6 @@
 //  let arr = [{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":600},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500},{"image":"https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222875M175000_1/vince-black-insulated-bomber-jacket.jpg","brand":"VINCE","price":500}]
 // localStorage.setItem("wishlist" , JSON.stringify(arr)) ;
 
-// let data22 = JSON.parse(localStorage.getItem("bag"))
-// if(data22 != undefined){
-// let shopping = document.getElementById("shopping")
-// shopping.innerText = `  ${data22.length}`;
-// }
 
 
 let data = JSON.parse(localStorage.getItem("wishlist")) 
