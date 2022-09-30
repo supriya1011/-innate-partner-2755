@@ -351,7 +351,7 @@ document.getElementById("White").addEventListener("click", function () {
 
 
 document.getElementById("navy").addEventListener("click", function () {
-    bag = []
+    let bag = []
     fil.forEach(elem => {
 
         if (elem.color === "Navy") {
@@ -396,8 +396,73 @@ const displayTable = (data) => {
 
 }
 
-document.addEventListener("keyup", function () {
 
-    console.log(fil)
+const inp = async (input) => {
 
-})
+    try {
+
+        let res = await fetch(`http://localhost:3000/ssense?q=${input}`);
+
+        let data = await res.json()
+        //    console.log(data)
+
+        //displayTable(data)
+        result(data)
+
+
+    } catch (e) {
+        console.log(e)
+
+    }
+}
+
+let button = document.getElementById("debounce");
+const debounce = (func, delay) => {
+    let debounceTimer
+    return function () {
+        const context = this
+        const args = arguments
+        clearTimeout(debounceTimer)
+        debounceTimer
+            = setTimeout(() => func.apply(context, args), delay)
+    }
+}
+
+
+
+
+
+
+
+
+button.addEventListener("keyup", debounce(function () {
+    let input = document.getElementById("debounce").value;
+
+    inp(input)
+    //  console.log(input)
+
+
+}, 1000))
+
+
+
+function result(data) {
+
+    data.forEach(el => {
+
+        //  document.querySelector("#result").innerHTML = null
+
+        let ul = document.createElement("ul")
+        let title = document.createElement("li")
+        title.innerText = el.title
+        console.log(el.title)
+        ul.append(title)
+
+
+        document.getElementById("result").append(ul)
+    });
+
+
+}
+
+

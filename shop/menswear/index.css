@@ -105,4 +105,82 @@ ul{
   
     z-index: 1;
   }
+
   
+
+  @media all and (min-width:740px) and (max-width:991px){
+
+
+    #Mens{
+        width: 745px;
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(3,auto);
+        margin-right: 82px;
+      
+      
+      }
+      
+      #Mens img{
+      width: 166.77px;
+      height: 249px;
+      }
+      
+      #Mens div{
+      width:189.47px;
+      height:auto;
+      margin: auto
+      }
+
+      #right-menu{
+        width: auto;
+        display: none; 
+      }
+
+      #left-menu{
+        width:181.47px;
+        margin-left: 44px;
+    display:none
+    }
+
+
+
+  }
+
+  
+  @media all and (min-width:418px) and (max-width:575px){
+
+
+    #Mens{
+        width: 745px;
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        margin-right: 82px;
+      
+      
+      }
+      
+      #Mens img{
+      width: 166.77px;
+      height: 249px;
+      }
+      
+      #Mens div{
+      width:189.47px;
+      height:auto;
+      margin: auto
+      }
+
+      #right-menu{
+        width: auto;
+        display: none; 
+      }
+
+      #left-menu{
+        width:181.47px;
+        margin-left: 44px;
+    display:none
+    }
+
+  }
