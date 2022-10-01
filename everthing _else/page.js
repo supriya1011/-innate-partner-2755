@@ -32,7 +32,7 @@ const getData = async () => {
 
     try {
 
-        let res = await fetch(`http://localhost:3000/ssense?_sort=price&_order=asc`);
+        let res = await fetch(`http://localhost:3000/ssense1?_sort=price&_order=asc`);
 
         let data = await res.json()
         //  console.log(data)
@@ -57,7 +57,7 @@ async function High() {
 
     try {
 
-        let res = await fetch(`http://localhost:3000/ssense?_sort=price&_order=desc`);
+        let res = await fetch(`http://localhost:3000/ssense1?_sort=price&_order=desc`);
 
         let data = await res.json();
         //  console.log(data);
