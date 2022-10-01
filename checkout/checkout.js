@@ -1,6 +1,6 @@
 
 let data1 = JSON.parse(localStorage.getItem("bag")) 
-let data = JSON.parse(localStorage.getItem("total")) 
+let data = localStorage.getItem("total")
 let ids = document.getElementById("Subtotal")
 ids.innerHTML = data
 let ids2 = document.getElementById("total")
@@ -23,7 +23,10 @@ const place = ()=>{
    let last =document.getElementById("LastName").value
    if(Cardnumber==="123456789012" && name!="" && last!=""){
        alert("order placed succesfully")
+       let neww = []
+       localStorage.setItem("bag" , JSON.stringify(neww))
        window.location.href = "../homepage/homepage.html"
+
    }else{
        alert("wrong credentials")
        

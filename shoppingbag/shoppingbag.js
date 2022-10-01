@@ -80,7 +80,7 @@ add.id = "add"
 add.addEventListener("click",()=>{
    adds(el,ind)
 })
-sum+= el.price
+sum+= +el.price
 p.style.float = "right"
 add.style.float = "right"
 div.append(image)
