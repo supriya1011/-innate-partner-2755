@@ -2,14 +2,13 @@ function nav(){
     
 let data22 = JSON.parse(localStorage.getItem("bag"))
 const data = ()=>{
-  if(data22.length > 0){
+  if(data22 != undefined){
     return data22.length
   }else{
     return 0
   }
   
 }
-
 
   return `
     <div class="wrapper">
@@ -44,7 +43,7 @@ const data = ()=>{
               <li><a href="../login/login.html">LOGIN</a></li>
               <li><a href="../wishlist/wishlist.html">WISHLIST</a></li>
               <li><a href="../shoppingbag/shoppingbag.html">SHOPPING BAG<span id="shopping">  ${data()}</span></a></li>
-              <li><a href="#"><i class="fas fa-user">&nbsp Account</i></a></li>
+              <li><a href="../account.html/account.html"><i class="fas fa-user">&nbsp Account</i></a></li>
               
         </ul>
       </div>

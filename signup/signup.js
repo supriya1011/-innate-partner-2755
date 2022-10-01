@@ -59,8 +59,8 @@ obj.gender = men
     let womens  = document.getElementById("women").defaultValue
     obj.gender = womens
      }
-    console.log(obj)
-    
+   // console.log(obj)
+    localStorage.setItem("details" , JSON.stringify(obj))
      //condition for password and email 
 
  if(email!=="" && password.length>6){

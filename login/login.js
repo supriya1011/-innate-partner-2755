@@ -5,9 +5,6 @@ con.innerHTML = nav
 
 
 
-
-
-
 let next = document.getElementById("continue")
 next.addEventListener("click" , ()=>{
     login()
