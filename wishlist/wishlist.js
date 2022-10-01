@@ -6,6 +6,10 @@
 
 let data = JSON.parse(localStorage.getItem("wishlist")) 
 console.log(data) // wishlist will be the key for add to wishlist button
+let detail = JSON.parse(localStorage.getItem("details"))
+
+
+
 const wishlist = ()=>{
     
     let container = document.getElementById("data")
@@ -78,8 +82,15 @@ else{
     });
 }
 }
-
+if(detail){
 wishlist()
+}else{
+    alert("signup first")
+    window.location.href = "../login/login.html"
+}
+
+
+// wishlist()
 
 
 // add functionality adding to bag 
