@@ -19,13 +19,14 @@ const data = ()=>{
       <div class="content">
       
         <ul class="links">
-          <li><a href="../menswear/index.html">MENSWEAR</a></li>
-          <li><a href="../woman/index.html">WOMENSWEAR</a></li>
+          <li><a href="../menswear/menswear.html">MENSWEAR</a></li>
+          <li><a href="../woman/womens.html">WOMENSWEAR</a></li>
           <li><a href="../everthing _else/page.html">EVERYTHING ELSE</a></li>  
         </ul>
 
       </div>
       <div class="logo"><a href="../homepage/homepage.html">SSENSE</a></div>
+
 
       <div class="content">
         <ul class="links">

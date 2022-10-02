@@ -65,10 +65,12 @@ function appendData(data){
         let div=document.createElement("div");
 
         let p_name=document.createElement("p");
+        p_name.id = "name"
         p_name.innerHTML=el.details
         p_name.id="name"
 
         let p_rating=document.createElement("p");
+        p_rating.id = "price"
         p_rating.innerHTML="₹"+el.price
         p_rating.id="price"
 
