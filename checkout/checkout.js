@@ -25,7 +25,7 @@ const place = ()=>{
        alert("order placed succesfully")
        let neww = []
        localStorage.setItem("bag" , JSON.stringify(neww))
-       window.location.href = "../homepage/index.html"
+       window.location.href = "../index.html"
 
    }else{
        alert("wrong credentials")

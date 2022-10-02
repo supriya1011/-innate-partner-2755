@@ -26,7 +26,7 @@ const data = ()=>{
         </ul>
 
       </div>
-      <div class="logo"><a href="../homepage/index.html">SSENSE</a></div>
+      <div class="logo"><a href="../index.html">SSENSE</a></div>
 
 
       <div class="content">
