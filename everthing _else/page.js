@@ -10,10 +10,10 @@
 const getData = async () => {
 
     try {
-        let res = await fetch(`http://localhost:3000/ssense1`);
+        let res = await fetch(`https://mocki.io/v1/33e045c5-2c05-4fb9-b0fe-0d67471db563`);
         // console.log(res)
         let data = await res.json();
-        // console.log(data[0].details)
+        //console.log(data)
         // what - data
         // where - posts_div
         appendData(data)
@@ -35,10 +35,10 @@ function appendData(data){
     data.forEach((el,i) => {
         let div=document.createElement("div");
 
-        let p_name=document.createElement("p");
+        let p_name=document.createElement("h4");
         p_name.innerHTML=el.details
 
-        let p_rating=document.createElement("p");
+        let p_rating=document.createElement("h4");
         p_rating.innerHTML="₹"+el.price
 
 

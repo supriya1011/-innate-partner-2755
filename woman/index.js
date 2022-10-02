@@ -39,16 +39,20 @@ document.getElementById("acc").addEventListener("click", function () {
 
 let fil = undefined;
 
+let act_data = undefined
+
+
 const getData = async () => {
 
     try {
 
-        let res = await fetch(`http://localhost:3000/womanWear`);
+        let res = await fetch(`https://mocki.io/v1/1d9b78fd-f1b7-4748-9ce5-612565c74c98`);
 
         let data = await res.json()
         //  console.log(data)
-        fil = data
-        displayTable(data)
+        act_data = data.womanWear
+        displayTable(act_data)
+        fil = act_data
 
 
     } catch (e) {
@@ -56,108 +60,79 @@ const getData = async () => {
 
     }
 }
-
 
 
 getData()
 
-
-const low = async () => {
-
-    try {
-
-        let res = await fetch(`http://localhost:3000/womanWear?_sort=price&_order=asc`);
-
-        let data = await res.json()
-        console.log(data)
-
-        displayTable(data)
-
-
-    } catch (e) {
-        console.log(e)
-
-    }
-}
-
 document.getElementById("Low").addEventListener("click", function () {
-    low()
+
+    act_data.sort(function (a, b) {
+        if (a.price > b.price) return 1;
+        if (a.price < b.price) return -1;
+        return 0;
+
+    })
+
+    displayTable(act_data);
+    console.log(womensData);
+
 })
 
 
 
 
-async function High() {
-
-    try {
-
-        let res = await fetch(`http://localhost:3000/womanWear?_sort=price&_order=desc`);
-
-        let data = await res.json();
-        console.log(data);
-
-        displayTable(data);
-
-
-    } catch (e) {
-        console.log(e);
-
-    }
-}
 
 document.getElementById("HightoLow").addEventListener("click", function () {
-    High()
+
+
+
+    act_data.sort(function (a, b) {
+        if (a.price > b.price) return -1;
+        if (a.price < b.price) return 1;
+        return 0;
+
+    })
+
+    displayTable(act_data);
+    console.log(womensData);
+
 })
 
 
-
-async function latestarrivals() {
-
-    try {
-
-        let res = await fetch(`http://localhost:3000/womanWear?_sort=id&_order=desc`);
-
-        let data = await res.json();
-        console.log(data);
-
-        displayTable(data);
-
-
-    } catch (e) {
-        console.log(e);
-
-    }
-}
 
 document.getElementById("latest-arrivals").addEventListener("click", function () {
-    latestarrivals()
+
+    act_data.sort(function (a, b) {
+        if (a.id > b.id) return -1;
+        if (a.id < b.id) return 1;
+        return 0;
+
+    })
+
+    displayTable(act_data);
+    //console.log(womensData);
 })
 
 
 
 
-async function trends() {
-
-    try {
-
-        let res = await fetch(`http://localhost:3000/womanWear?_sort=trnding&_order=desc`);
-
-        let data = await res.json();
-        //  console.log(data);
-
-        displayTable(data);
 
 
-    } catch (e) {
-        console.log(e);
-
-    }
-}
 
 document.getElementById("Trending").addEventListener("click", function () {
-    trends()
-})
 
+    act_data.sort(function (a, b) {
+        if (a.trnding > b.trnding) return -1;
+        if (a.trnding < b.trnding) return 1;
+        return 0;
+
+    })
+
+    displayTable(act_data);
+    console.log(womensData);
+
+
+})
 
 document.getElementById("black").addEventListener("click", function () {
     let bag = []

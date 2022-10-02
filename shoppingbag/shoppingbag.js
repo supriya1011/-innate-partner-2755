@@ -33,14 +33,14 @@ const append = ()=>{
    btn.innerText = "SHOP MENSWEAR" 
    btn.className = "but3"
    btn.addEventListener("click" , ()=>{
-    window.location.href = "../menswear/index.html"
+    window.location.href = "../menswear/menswear.html"
    })
    // window.location.href = ""
    let btn2 = document.createElement("button")
    btn2.innerText = "SHOP WOMENSWEAR" 
    btn2.className = "but3"
    btn2.addEventListener("click" , ()=>{
-    window.location.href = "../woman/index.html"
+    window.location.href = "../woman/womens.html"
    })
    // window.location.href = ""
    let btn3 = document.createElement("button")
