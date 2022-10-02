@@ -27,6 +27,55 @@ const getData = async () => {
 
   getData();
 
+  //
+  const low = async () => {
+
+    try {
+
+        let res = await fetch(`http://localhost:3000/ssense1?_sort=price&_order=asc`);
+
+        let data = await res.json()
+        //  console.log(data)
+
+        appendData(data)
+
+
+    } catch (e) {
+        console.log(e)
+
+    }
+}
+
+document.getElementById("low_to_high").addEventListener("click", function () {
+    low()
+})
+
+
+
+
+async function High() {
+
+    try {
+
+        let res = await fetch(`http://localhost:3000/ssense1?_sort=price&_order=desc`);
+
+        let data = await res.json();
+        //  console.log(data);
+
+        appendData(data);
+
+
+    } catch (e) {
+        console.log(e);
+
+    }
+}
+
+document.getElementById("high_to_low").addEventListener("click", function () {
+    High()
+});
+//
+
 function appendData(data){
     let data_div=document.getElementById("mid");
 
