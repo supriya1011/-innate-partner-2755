@@ -1,14 +1,13 @@
+import nav from '../navbar/nav.js';
 
-  import nav from '../navbar/nav.js';
-  console.log(nav);
-  let nav1=document.getElementById("navbar");
-  nav1.innerHTML=nav;
+let nav1 = document.getElementById("navbar");
+nav1.innerHTML = nav;
 
 
-  import footer from '../footer/footer.js';
-  console.log(footer);
-  let footer1=document.getElementById("foot");
-  footer1.innerHTML=footer;
+import footer from '../footer/footer.js';
+//console.log(footer);
+let footer1 = document.getElementById("foot");
+footer1.innerHTML = footer;
 
 
 
@@ -68,7 +67,11 @@ const getData = async () => {
 }
 
 
+
 getData()
+
+
+
 
 document.getElementById("Low").addEventListener("click", function () {
 
@@ -139,6 +142,7 @@ document.getElementById("Trending").addEventListener("click", function () {
 
 
 })
+
 document.getElementById("black").addEventListener("click", function () {
     let bag = []
     fil.forEach(elem => {
@@ -357,7 +361,7 @@ document.getElementById("navy").addEventListener("click", function () {
 const displayTable = (data) => {
     document.getElementById("Mens").innerHTML = null
 
-    data.forEach((el,i) => {
+    data.forEach((el, i) => {
 
         let box = document.createElement("div")
         box.id = "box"
@@ -370,17 +374,17 @@ const displayTable = (data) => {
         details.innerText = el.details
 
         let price = document.createElement("p")
-        price.innerText = `$ ${el.price}`
+        price.innerText = `₹ ${el.price}`
 
-        box.addEventListener("click",function(){
-                 
-            let x=data.splice(i,1)
+        box.addEventListener("click", function () {
 
-        
+            let x = data.splice(i, 1)
 
-            localStorage.setItem("product",JSON.stringify(x))
 
-            window.location.href="../products/mens.html"
+
+            localStorage.setItem("product", JSON.stringify(x))
+
+            window.location.href = "../products/mens.html"
         })
 
         box.append(img, brand, details, price)
@@ -392,24 +396,51 @@ const displayTable = (data) => {
 }
 
 
-const inp = async (input) => {
+const inp = (input) => {
 
-    try {
+    let filter = input.toUpperCase()
+    let result = document.getElementById("result")
+    act_data.forEach((el, i) => {
+        // console.log(el.title)
+        let title = el.title
 
-        let res = await fetch(`http://localhost:3000/ssense?q=${input}`);
-
-        let data = await res.json()
-        //    console.log(data)
-
-        //displayTable(data)
-        result(data)
+        if (title.toUpperCase().indexOf(filter) > -1) {
 
 
-    } catch (e) {
-        console.log(e)
 
-    }
+
+            let x = act_data.splice(i, 2)
+
+
+            displayTable(x)
+
+            x.forEach(el => {
+
+                document.querySelector("#result").innerHTML = null
+
+                let ul = document.createElement("ul")
+                let title = document.createElement("li")
+                title.innerText = el.title
+                console.log(el.title)
+                ul.append(title)
+
+
+                document.getElementById("result").append(ul)
+            });
+
+
+
+        }
+
+
+
+
+
+
+    });
+
 }
+
 
 let button = document.getElementById("debounce");
 const debounce = (func, delay) => {
@@ -421,6 +452,8 @@ const debounce = (func, delay) => {
         debounceTimer
             = setTimeout(() => func.apply(context, args), delay)
     }
+
+
 }
 
 
@@ -434,36 +467,13 @@ button.addEventListener("keyup", debounce(function () {
     let input = document.getElementById("debounce").value;
 
     inp(input)
-    //  console.log(input)
+    console.log(input)
 
 
 }, 1000))
 
 
 
-function result(data) {
-
-    data.forEach(el => {
-
-        //  document.querySelector("#result").innerHTML = null
-
-        let ul = document.createElement("ul")
-        let title = document.createElement("li")
-        title.innerText = el.title
-        console.log(el.title)
-        ul.append(title)
 
 
-        document.getElementById("result").append(ul)
-    });
-
-
-}
-
-
-// let data1 = JSON.parse(localStorage.getItem("bag"))
-// if(data1!=""){
-// let shopping = document.getElementById("shopping")
-// shopping.innerText = `SHOPPING BAG ${data1.length}`;
-// }
 

@@ -14,6 +14,7 @@ const data = ()=>{
     <div class="wrapper">
     <nav>
       <input type="checkbox" id="show-search">
+      <div id="result"></div>
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
@@ -25,7 +26,7 @@ const data = ()=>{
         </ul>
 
       </div>
-      <div class="logo"><a href="../homepage/homepage.html">SSENSE</a></div>
+      <div class="logo"><a href="../homepage/index.html">SSENSE</a></div>
 
 
       <div class="content">
@@ -50,7 +51,7 @@ const data = ()=>{
       </div>
       <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
       <form action="#" class="search-box">
-        <input type="text" placeholder="Type Something to Search..." required>
+        <input id = "debounce" type="text" placeholder="Type Something to Search..." required>
         <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
       </form>
     </nav>

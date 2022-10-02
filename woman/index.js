@@ -1,13 +1,13 @@
 import nav from '../navbar/nav.js';
-console.log(nav);
-let nav1=document.getElementById("navbar");
-nav1.innerHTML=nav;
+
+let nav1 = document.getElementById("navbar");
+nav1.innerHTML = nav;
 
 
 import footer from '../footer/footer.js';
 console.log(footer);
-let footer1=document.getElementById("foot");
-footer1.innerHTML=footer;
+let footer1 = document.getElementById("foot");
+footer1.innerHTML = footer;
 
 
 
@@ -39,8 +39,7 @@ document.getElementById("acc").addEventListener("click", function () {
 
 let fil = undefined;
 
-let act_data = undefined
-
+let act_data = undefined;
 
 const getData = async () => {
 
@@ -50,9 +49,10 @@ const getData = async () => {
 
         let data = await res.json()
         //  console.log(data)
+
         act_data = data.womanWear
-        displayTable(act_data)
         fil = act_data
+        displayTable(act_data)
 
 
     } catch (e) {
@@ -62,7 +62,28 @@ const getData = async () => {
 }
 
 
+
 getData()
+
+
+const low = async () => {
+
+    try {
+
+        let res = await fetch(`http://localhost:3000/womanWear?_sort=price&_order=asc`);
+
+        let data = await res.json()
+        console.log(data)
+
+        displayTable(data)
+
+
+    } catch (e) {
+        console.log(e)
+
+    }
+}
+
 
 document.getElementById("Low").addEventListener("click", function () {
 
@@ -129,10 +150,11 @@ document.getElementById("Trending").addEventListener("click", function () {
     })
 
     displayTable(act_data);
-    console.log(womensData);
+    //  console.log(womensData);
 
 
 })
+
 
 document.getElementById("black").addEventListener("click", function () {
     let bag = []
@@ -361,15 +383,15 @@ const displayTable = (data) => {
         let price = document.createElement("p")
         price.innerText = `$ ${el.price}`
 
-        box.addEventListener("click",function(){
-                 
-            let x=data.splice(i,1)
+        box.addEventListener("click", function () {
 
-        
+            let x = data.splice(i, 1)
 
-            localStorage.setItem("product",JSON.stringify(x))
 
-            window.location.href="../products/mens.html"
+
+            localStorage.setItem("product", JSON.stringify(x))
+
+            window.location.href = "../products/mens.html"
         })
 
         box.append(img, brand, details, price)
@@ -379,3 +401,159 @@ const displayTable = (data) => {
     });
 
 }
+
+
+
+
+// const inp = async (input) => {
+
+//     try {
+
+//         let res = await fetch(`http://localhost:3000/womanWear?q=${input}`);
+
+//         let data = await res.json()
+//         console.log(data)
+
+//         displayTable(data)
+//         result(data)
+
+
+//     } catch (e) {
+//         console.log(e)
+//     }
+// }
+
+// let button = document.getElementById("debounce");
+// const debounce = (func, delay) => {
+//     let debounceTimer
+//     return function () {
+//         const context = this
+//         const args = arguments
+//         clearTimeout(debounceTimer)
+//         debounceTimer
+//             = setTimeout(() => func.apply(context, args), delay)
+//     }
+// }
+
+
+
+
+
+
+
+
+// button.addEventListener("keyup", debounce(function () {
+//     let input = document.getElementById("debounce").value;
+
+//     inp(input)
+//     console.log(input)
+
+
+// }, 1000))
+
+
+
+// function result(data) {
+//     data.forEach(el => {
+
+//         document.querySelector("#result").innerHTML = null
+
+//         let ul = document.createElement("ul")
+//         let title = document.createElement("li")
+//         title.innerText = el.title
+//         console.log(el.title)
+//         ul.append(title)
+
+
+//         document.getElementById("result").append(ul)
+//     });
+
+// }
+
+
+
+
+const inp = (input) => {
+
+    let filter = input.toUpperCase()
+    let result = document.getElementById("result")
+    act_data.forEach((el, i) => {
+        // console.log(el.title)
+        let title = el.title
+
+        if (title.toUpperCase().indexOf(filter) > -1) {
+
+
+
+
+            let x = act_data.splice(i, 3)
+
+
+            displayTable(x)
+
+            x.forEach(el => {
+
+                document.querySelector("#result").innerHTML = null
+
+                let ul = document.createElement("ul")
+                let title = document.createElement("li")
+                title.innerText = el.title
+                console.log(el.title)
+                ul.append(title)
+
+
+                document.getElementById("result").append(ul)
+            });
+
+
+
+        }
+
+
+
+
+
+
+    });
+
+}
+
+
+let button = document.getElementById("debounce");
+const debounce = (func, delay) => {
+    let debounceTimer
+    return function () {
+        const context = this
+        const args = arguments
+        clearTimeout(debounceTimer)
+        debounceTimer
+            = setTimeout(() => func.apply(context, args), delay)
+    }
+
+
+}
+
+
+
+
+
+
+
+
+button.addEventListener("keyup", debounce(function () {
+    let input = document.getElementById("debounce").value;
+
+    inp(input)
+    console.log(input)
+
+
+}, 1000))
+
+
+
+
+
+
+
+
+
