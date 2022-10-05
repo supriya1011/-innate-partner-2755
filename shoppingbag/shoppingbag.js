@@ -65,9 +65,11 @@ let image = document.createElement("img")
 image.src = el.img
 let p1 = document.createElement("span")
 p1.innerHTML = el.details
+let p2 = document.createElement("p")
+p2.innerHTML = el.title
 let br = document.createElement("br")
 let p = document.createElement("span")
-p.innerHTML = el.price
+p.innerHTML = "₹"+ el.price
 let del = document.createElement("span")
 del.innerHTML = "remove"
 del.id = "delete"
@@ -84,15 +86,15 @@ sum+= +el.price
 p.style.float = "right"
 add.style.float = "right"
 div.append(image)
-div1.append(p1,p,br,del,add)
+div1.append(p1,p,br,p2,del,add)
 container.append(div,div1)
-total.innerHTML = sum ; 
-ordertotal.innerHTML = sum ;
+total.innerHTML = "₹"+sum ; 
+ordertotal.innerHTML = "₹"+sum ;
 localStorage.setItem("total",sum)
 })
  }
 }
-append()
+// append()
 
 const remove = (el,ind)=>{
    data.splice(ind,1)
@@ -112,3 +114,12 @@ const adds = (el,ind)=>{
  localStorage.setItem("bag",JSON.stringify(data))
  append()
 }
+
+let detail = JSON.parse(localStorage.getItem("details"))
+if(detail){
+  append()
+  }else{
+      alert("signup first")
+      window.location.href = "../login/login.html"
+  }
+

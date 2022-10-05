@@ -2,9 +2,9 @@
 let data1 = JSON.parse(localStorage.getItem("bag")) 
 let data = localStorage.getItem("total")
 let ids = document.getElementById("Subtotal")
-ids.innerHTML = data
+ids.innerHTML = "₹"+data
 let ids2 = document.getElementById("total")
-ids2.innerHTML =data
+ids2.innerHTML = "₹"+data
 let summary = document.getElementById("summary")
 summary.innerHTML = `ORDER SUMMARY - ${data1.length} ITEM`
 
@@ -34,4 +34,12 @@ const place = ()=>{
    
 }
 
+
+
+// if(detail){
+//    wishlist()
+//    }else{
+//        alert("signup first")
+//        window.location.href = "../login/login.html"
+//    }
 

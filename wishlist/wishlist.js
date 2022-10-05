@@ -63,7 +63,7 @@ else{
         let p = document.createElement("p")
         p.innerHTML = el.details
         let p1 = document.createElement("p")
-        p1.innerHTML = el.price
+        p1.innerHTML = "₹"+el.price
         let btn = document.createElement("button")
         btn.innerText = " ADD TO BAG" 
         btn.className = "buttton"

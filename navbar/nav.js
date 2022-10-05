@@ -21,7 +21,7 @@ const data = ()=>{
       
         <ul class="links">
           <li><a href="../menswear/menswear.html">MENSWEAR</a></li>
-          <li><a href="../woman/womens.html">WOMENSWEAR</a></li>
+          <li><a href="../woman/index.html">WOMENSWEAR</a></li>
           <li><a href="../everthing _else/page.html">EVERYTHING ELSE</a></li>  
         </ul>
 

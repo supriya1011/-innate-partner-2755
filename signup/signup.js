@@ -67,7 +67,7 @@ obj.gender = men
      if(obj.gender === "men"){
         count++;
         localStorage.setItem("count",count)
-        window.location.href = "../menswear/index.html"
+        window.location.href = "../menswear/menswear.html"
         alert("signup succesfull welcome to mens page").break
          
      }else if(obj.gender === "women"){
